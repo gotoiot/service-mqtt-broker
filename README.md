@@ -17,9 +17,13 @@ Para este proyecto el broker implementado es `Mosquitto` y se ejecuta sobre el e
 
 Para correr este proyecto es necesario que instales `Docker` y `Docker Compose`. 
 
+<details><summary><b>Mira cómo instalar las dependencias</b></summary><br>
+
 En [este documento](https://www.gotoiot.com/pages/articles/docker_installation/index.html) publicado en nuestra web están los detalles para instalar Docker y Docker Compose. Si querés instalar ambas herramientas en una Raspberry Pi podés seguir [esta guía](https://devdojo.com/bobbyiliev/how-to-install-docker-and-docker-compose-on-raspberry-pi) que muestra todos los detalles de instalación.
 
 En caso que tengas algún incoveniente o quieras profundizar al respecto, podes leer la documentación oficial de [Docker](https://docs.docker.com/get-docker/) y también la de [Docker Compose](https://docs.docker.com/compose/install/).
+
+</details>
 
 ## Descargar el código 💾
 
@@ -37,7 +41,9 @@ Cuando tengas el código descargado, desde una terminal en la raíz del proyecto
 
 ## Información útil 🔍
 
-En esta sección vas a encontrar información de utilidad para el proyecto.
+En esta sección vas a encontrar información que te va a servir para tener un mayor contexto.
+
+<details><summary><b>Mira todos los detalles</b></summary>
 
 ### Configuración del broker
 
@@ -45,25 +51,21 @@ El archivo `docker-compose.yml` administra los parámetros de ejecución del bro
 
 Si querés modificar algún parámetro de configuración del broker podés hacerlo desde el archivo `config/mosquitto.conf`. En caso que quieras que los clientes se conecten al broker con usuario y contraseña descomentá la línea `password_file /etc/mosquitto/pass.txt` y agregá la contraseña de conexión dentro del archivo `auth/pass.txt`.
 
+</details>
+
 ## Tecnologías utilizadas 🛠️
 
-Estas son las tecnologías usadas en este proyecto:
+<details><summary><b>Mira la lista de tecnologías usadas en el proyecto</b></summary><br>
 
 * [Docker](https://www.docker.com/) - Ecosistema que permite la ejecución de contenedores de software.
 * [Docker Compose](https://docs.docker.com/compose/) - Herramienta que permite administrar múltiples contenedores de Docker.
 * [Mosquitto](https://mosquitto.org/) - Broker MQTT libre y abierto creado por Eclipse Foundation.
 
+</details>
+
 ## Contribuir 🖇️
 
 Si estás interesado en el proyecto y te gustaría sumar fuerzas para que siga creciendo y mejorando, podés abrir un hilo de discusión para charlar tus propuestas en [este link](https://github.com/gotoiot/service-mqtt-broker/issues/new). Así mismo podés leer el archivo [Contribuir.md](https://github.com/gotoiot/gotoiot-doc/wiki/Contribuir) de nuestra Wiki donde están bien explicados los pasos para que puedas enviarnos pull requests.
-
-## Autores 👥
-
-Las colaboraciones principales fueron realizadas por:
-
-* **[Agustin Bassi](https://github.com/agustinBassi)**: Ideación, puesta en marcha y mantenimiento del proyecto.
-
-También podés mirar todas las personas que han participado en la [lista completa de contribuyentes](https://github.com/gotoiot/service-mqtt-broker/contributors).
 
 ## Sobre Goto IoT 📖
 
@@ -83,6 +85,14 @@ Si te gustó este proyecto y quisieras apoyarlo, cualquiera de estas acciones es
 * Sumarte a [nuestra comunidad](https://groups.google.com/g/gotoiot) abierta y dejar un feedback sobre qué te pareció el proyecto.
 * [Seguirnos en twitter](https://github.com/gotoiot/doc/wiki) y dejar algún comentario o like.
 * Compartir este proyecto con otras personas.
+
+## Autores 👥
+
+Las colaboraciones principales fueron realizadas por:
+
+* **[Agustin Bassi](https://github.com/agustinBassi)**: Ideación, puesta en marcha y mantenimiento del proyecto.
+
+También podés mirar todas las personas que han participado en la [lista completa de contribuyentes](https://github.com/gotoiot/service-mqtt-broker/contributors).
 
 ## Licencia 📄
 
